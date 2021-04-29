@@ -19,5 +19,6 @@ public class Task1 {
 
         }
         System.out.println("\n \n DONE");
+        scanner.close();
     }
 }
