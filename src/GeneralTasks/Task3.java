@@ -14,11 +14,12 @@ public class Task3 {
         do {
 
             System.out.println("Check option of task:\n" +
-                    "1 - by using if else conditions\n" +
+                    "1 - by using ternary operation\n" +
                     "2 - by using switch case conditions\n" +
+                    "3 - by using if else conditions\n" +
                     "0 - exit menu");
             choise = scanner.nextInt();
-            if(choise ==1){
+            if (choise == 1) {
                 System.out.println("Input number please:");
                 int num = scanner.nextInt();
                 String msg = num == 1 ? "ONE" : (num == 2 ? "TWO" : (num == 3 ?
@@ -28,10 +29,10 @@ public class Task3 {
                 System.out.println(msg);
 
 
-            }else if(choise == 2){
+            } else if (choise == 2) {
                 System.out.println("Input number please:");
                 int num = scanner.nextInt();
-                switch (num){
+                switch (num) {
                     case 1:
                         System.out.println("ONE");
                         break;
@@ -63,9 +64,34 @@ public class Task3 {
                         System.out.println("OTHER");
                         break;
                 }
-
-
             }
+
+            if (choise == 3) {
+                System.out.println("Input number please:");
+                int num = scanner.nextInt();
+                if (num == 1) {
+                    System.out.println("ONE");
+                } else if (num == 2) {
+                    System.out.println("TWO");
+                } else if (num == 3) {
+                    System.out.println("THREE");
+                } else if (num == 4) {
+                    System.out.println("FOUR");
+                } else if (num == 5) {
+                    System.out.println("FIVE");
+                } else if (num == 6) {
+                    System.out.println("SIX");
+                } else if (num == 7) {
+                    System.out.println("SEVEN");
+                } else if (num == 8) {
+                    System.out.println("EIGHT");
+                } else if (num == 9) {
+                    System.out.println("NINE");
+                } else {
+                    System.out.println("OTHER");
+                }
+            }
+
             }while (choise != 0);
 
 
