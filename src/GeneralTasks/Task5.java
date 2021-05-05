@@ -42,7 +42,7 @@ public class Task5 {
                 }
 
             }
-        }while (choise != 0);
+        } while (choise != 0);
         scanner.close();
     }
 }

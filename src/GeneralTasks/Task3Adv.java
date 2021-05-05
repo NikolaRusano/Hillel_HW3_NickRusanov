@@ -31,6 +31,6 @@ public class Task3Adv {
                     }
                 }
             }
-        }while (choise != 0);
+        } while (choise != 0);
     }
 }

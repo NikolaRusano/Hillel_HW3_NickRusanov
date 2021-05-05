@@ -9,24 +9,24 @@ public class task6 {
     public static void main(String[] args) {
         System.out.println("Input a please");
         Scanner scanner = new Scanner(System.in);
-        double a,b;
+        double a, b;
         a = scanner.nextDouble();
         System.out.println("Input b please");
         b = scanner.nextDouble();
-        if(a == 0){
-            if(b == 0){
+        if (a == 0) {
+            if (b == 0) {
                 System.out.println("The linear equation doesn't have any solution");
-            }else if (b != 0){
-                System.out.println("The x = " + -1.0*b);
+            } else if (b != 0) {
+                System.out.println("The x = " + -1.0 * b);
             }
-        }else if (a != 0){
-            if(b == 0){
-                System.out.println("The x equal " + 1.0/a);
-            }else if(b != 0){
-                System.out.println("The x equal " + ((1.0/a)-b));
+        } else if (a != 0) {
+            if (b == 0) {
+                System.out.println("The x equal " + 1.0 / a);
+            } else if (b != 0) {
+                System.out.println("The x equal " + ((1.0 / a) - b));
             }
 
-        }else{
+        } else {
             System.out.println("Incorrect input");
         }
         scanner.close();

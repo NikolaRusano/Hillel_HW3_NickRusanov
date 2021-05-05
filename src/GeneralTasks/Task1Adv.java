@@ -10,15 +10,15 @@ public class Task1Adv {
         System.out.println("Input sum of the purchase");
         Scanner scanner = new Scanner(System.in);
         double sumPurchase = scanner.nextDouble();
-        if(sumPurchase > 1000.0){
+        if (sumPurchase > 1000.0) {
             double sunDiscount =
-            sumPurchase = sumPurchase * 0.15;
+                    sumPurchase = sumPurchase * 0.15;
             System.out.println("The sum purchase with discount will be - " + (sumPurchase - sunDiscount));
 
-        }else if(sumPurchase < 1000.0){
+        } else if (sumPurchase < 1000.0) {
             System.out.println("The sum purchase will be without discount" + sumPurchase);
 
-        }else {
+        } else {
             System.out.println("Incorrect input");
         }
         scanner.close();

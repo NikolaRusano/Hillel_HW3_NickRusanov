@@ -13,20 +13,20 @@ public class Task9 {
         int husAge, wifeAge;
         System.out.println("Input the husnand age");
         husAge = scanner.nextInt();
-        if (husAge < 35){
+        if (husAge < 35) {
             wifeAge = scanner.nextInt();
-            if(wifeAge < 35){
+            if (wifeAge < 35) {
                 System.out.println("The family can be gotten mortgage");
-            }else if(wifeAge >= 35) {
+            } else if (wifeAge >= 35) {
                 System.out.println("The family can't be gotten mortgage");
-            }else{
+            } else {
                 System.out.println("Incorrect input");
             }
-        }else if (husAge >= 35){
+        } else if (husAge >= 35) {
             System.out.println("The family can't be gotten mortgage");
-        }else {
+        } else {
             System.out.println("Incorrect input");
         }
-       scanner.close();
+        scanner.close();
     }
 }

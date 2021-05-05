@@ -7,9 +7,10 @@ import java.util.Scanner;
 //и т д)
 public class Task10 {
     public int finNum;
-    public String NameofFinger(int finNum){
+
+    public String NameofFinger(int finNum) {
         String resFingName;
-        switch (finNum){
+        switch (finNum) {
             case 1:
                 resFingName = "Thumb";
                 break;
@@ -31,6 +32,7 @@ public class Task10 {
         }
         return resFingName;
     }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input Finger number 1 - 5:");

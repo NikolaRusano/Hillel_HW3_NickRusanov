@@ -1,6 +1,7 @@
 package GeneralTasks;
 
 import java.util.Scanner;
+
 import static java.lang.Math.sqrt;
 
 //Известны площади круга и квадрата. Определить: уместится ли круг в квадрате
@@ -13,11 +14,11 @@ public class Task2Adv {
         System.out.println("Please input square area:");
         double squareArea = scanner.nextDouble();
         double aSide = sqrt(squareArea);
-        double circleRadius = (sqrt(circleArea))/Math.PI;
-        if (aSide < squareArea){
+        double circleRadius = (sqrt(circleArea)) / Math.PI;
+        if (aSide < squareArea) {
             System.out.println("The circle can be filled inside the square");
 
-        }else if(aSide >= squareArea){
+        } else if (aSide >= squareArea) {
             System.out.println("The circle can't be filled inside the square");
         }
 
