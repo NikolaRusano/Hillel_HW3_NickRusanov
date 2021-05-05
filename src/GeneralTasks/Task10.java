@@ -6,9 +6,10 @@ import java.util.Scanner;
 //переменную типа int и в зависимости от номер выводит название пальца (1-”большой”
 //и т д)
 public class Task10 {
-    public String NameofFinger(int num){
+    public int finNum;
+    public String NameofFinger(int finNum){
         String resFingName;
-        switch (num){
+        switch (finNum){
             case 1:
                 resFingName = "Thumb";
                 break;
@@ -20,20 +21,24 @@ public class Task10 {
                 break;
             case 4:
                 resFingName = "Ring finger";
+                break;
             case 5:
                 resFingName = "Little finger";
+                break;
             default:
                 resFingName = "There isn't exist such finger. Invalid input";
+                break;
         }
         return resFingName;
     }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input Finger number 1 - 5:");
-        int finNum = scanner.nextInt();
         Task10 t10 = new Task10();
+        t10.finNum = scanner.nextInt();
 
-        System.out.println("The inputted finger name is: " t10.NameofFinger(finNum));
+
+        System.out.println("The inputted finger name is: " + t10.NameofFinger(t10.finNum));
         scanner.close();
 
     }
